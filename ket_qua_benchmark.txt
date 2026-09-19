@@ -1,0 +1,45 @@
+Embedding backend: offline corpus TF-IDF
+Chunking strategy: RecursiveChunker(chunk_size=1600)
+Documents: 5
+Chunks: 29
+=== SIMILARITY PREDICTIONS ===
+1|cao|0.7906|cao|Đúng
+2|cao|0.5549|cao|Đúng
+3|cao|0.5703|cao|Đúng
+4|thấp|0.0000|thấp|Đúng
+5|thấp|0.0000|thấp|Đúng
+=== RETRIEVAL BENCHMARK ===
+Q1: Sinh viên được vay vốn Ngân hàng Chính sách xã hội tối đa bao nhiêu mỗi tháng và trong bao nhiêu tháng mỗi năm học?
+filter=None
+top1=ho-tro-tai-chinh-tan-sinh-vien score=0.2433 preview=• Hỗ trợ học tập cho sinh viên người dân tộc thiểu số rất ít người: 100% lương cơ sở x 12 tháng/năm học 2. Trợ cấp xã hội Theo Quyết định của Thủ tướng Chính phủ. Đối tượng và mức 
+top3=['ho-tro-tai-chinh-tan-sinh-vien', 'nghi-dinh-55-nhan-hoc-bong', 'nghi-dinh-55-nhan-hoc-bong']
+relevant=yes
+agent=Mức vay tối đa là 4 triệu đồng mỗi tháng, áp dụng trong 10 tháng của một năm học.
+Q2: Học phí năm học 2022-2023 của chương trình chuẩn và chương trình ELITECH dự kiến là bao nhiêu?
+filter=None
+top1=hoc-phi-dai-hoc-2022 score=0.4646 preview=# Học phí Đại học 2022 Học phí Đại học 2022 Danh mục Tuyển sinh Đại học Thông tin chung Đề án tuyển sinh Xét tuyển tài năng Kỳ thi đánh giá tư duy Điểm chuẩn tuyển sinh Xác thực ch
+top3=['hoc-phi-dai-hoc-2022', 'nghi-dinh-55-nhan-hoc-bong', 'tieu-chi-xet-hoc-bong-ho-tro-hoc-tap']
+relevant=yes
+agent=Chương trình chuẩn dự kiến 24-30 triệu đồng/năm học; chương trình ELITECH dự kiến 35-40 triệu đồng/năm học, trừ một số chương trình khoảng 60 triệu đồng.
+Q3: Học sinh K65 cần có hạnh kiểm 5 kỳ THPT thế nào và học bổng hỗ trợ học tập có những mức nào?
+filter=None
+top1=mo-dang-ky-hoc-bong-ho-tro-hoc-tap-cho-hoc-sinh-nam-cuoi-thpt score=0.2329 preview=Phần lớn quỹ này sẽ dành cho sinh viên dưới dạng học bổng hỗ trợ học tập (HTHT). Và nếu sinh viên duy trì kết quả học tập tốt, học bổng HTHT sẽ được xét và cấp trong toàn bộ thời g
+top3=['mo-dang-ky-hoc-bong-ho-tro-hoc-tap-cho-hoc-sinh-nam-cuoi-thpt', 'mo-dang-ky-hoc-bong-ho-tro-hoc-tap-cho-hoc-sinh-nam-cuoi-thpt', 'tieu-chi-xet-hoc-bong-ho-tro-hoc-tap']
+relevant=yes
+agent=Học sinh phải có hạnh kiểm 5 kỳ THPT loại tốt; học bổng gồm mức toàn phần 100% học phí hoặc bán phần 50% học phí.
+Q4: Theo Nghị định 179, ba mức hỗ trợ hàng tháng cho chương trình tài năng, vi mạch hoặc khoa học cơ bản, và kỹ thuật then chốt là bao nhiêu?
+filter=None
+top1=nghi-dinh-55-nhan-hoc-bong score=0.3974 preview=6. Logistics và quản lý chuỗi cung ứng, ngành Logistics và quản lý chuỗi cung ứng, Thạc sĩ tích hợp Cử nhân Tài năng. 7. Kỹ thuật hóa học, ngành Kỹ thuật hóa học, Thạc sĩ tích hợp 
+top3=['nghi-dinh-55-nhan-hoc-bong', 'nghi-dinh-55-nhan-hoc-bong', 'nghi-dinh-55-nhan-hoc-bong']
+relevant=yes
+agent=Ba mức hỗ trợ lần lượt là 5.500.000 đồng/tháng, 4.200.000 đồng/tháng và 3.700.000 đồng/tháng.
+Q5: Hộ nghèo và hộ cận nghèo được cấp học bổng hỗ trợ học tập bằng bao nhiêu phần trăm học phí?
+filter={'audience': 'high-school-student'}
+top1=tieu-chi-xet-hoc-bong-ho-tro-hoc-tap score=0.4900 preview=Bên cạnh Học bổng tài năng dành cho những sinh viên có thành tích đặc biệt xuất sắc, Trường dành phần lớn kinh phí của Quỹ học bổng để hỗ trợ sinh viên có hoàn cảnh gia đình đặc bi
+top3=['tieu-chi-xet-hoc-bong-ho-tro-hoc-tap', 'mo-dang-ky-hoc-bong-ho-tro-hoc-tap-cho-hoc-sinh-nam-cuoi-thpt', 'tieu-chi-xet-hoc-bong-ho-tro-hoc-tap']
+relevant=yes
+agent=Sinh viên thuộc hộ nghèo được cấp 100% học phí; hộ cận nghèo hoặc hoàn cảnh đặc biệt khó khăn được cấp 50% học phí, trước khi xét điều chỉnh theo hoàn cảnh cụ thể.
+unfiltered_top3=['tieu-chi-xet-hoc-bong-ho-tro-hoc-tap', 'mo-dang-ky-hoc-bong-ho-tro-hoc-tap-cho-hoc-sinh-nam-cuoi-thpt', 'ho-tro-tai-chinh-tan-sinh-vien']
+Top-3 grounded: 5/5
+=== FAILURE ANALYSIS ===
+Với chunk_size=800, Q1 và Q4 lấy đúng tài liệu nhưng bằng chứng bị chia sang nhiều chunk nên chỉ đạt 3/5. Tăng lên 1600 giữ đủ dữ kiện trong top-3 và đưa cả 5 tài liệu đúng lên top-1, kết quả đạt 5/5.
